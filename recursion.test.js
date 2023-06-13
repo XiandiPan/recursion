@@ -78,11 +78,11 @@ describe("findIndex", function() {
   });
 });
 
-describe.only("revString", function() {
+describe("revString", function() {
   it("returns a reversed copy of the string", function() {
-    // expect(revString("")).toBe("");
-    // expect(revString("x")).toBe("x");
-    // expect(revString("cat")).toBe("tac");
+    expect(revString("")).toBe("");
+    expect(revString("x")).toBe("x");
+    expect(revString("cat")).toBe("tac");
     expect(revString("duck")).toBe("kcud");
   });
 });
@@ -136,7 +136,7 @@ describe("binarySearch", function () {
   });
 });
 
-describe("binarySearchIndex", function () {
+describe.only("binarySearchIndex", function () {
   it("should find the index of a value in a sorted array", function () {
     expect(binarySearchIndex([1, 2, 3, 4], 4)).toEqual(3);
     expect(binarySearchIndex([1, 2], 1)).toEqual(0);
